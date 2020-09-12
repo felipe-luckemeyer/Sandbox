@@ -1,5 +1,7 @@
-import MenuButton from "./Buttons/MenuButton"
+import LinkButton from "./Buttons/LinkButton"
+import Lista from "./Animacoes/Lista"
 
 export {
-  MenuButton
+  LinkButton,
+  Lista
 }

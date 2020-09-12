@@ -1,15 +1,17 @@
 import React from 'react'
-import { MenuButton } from "../../components"
+import { LinkButton } from "../../components"
 import * as s from "./styled-menu";
 
 const Menu = () => {
   return (
     <s.Container>
       <s.Menu>
-        <MenuButton
-          text={"Animacoes"}
-          path={"/animacoes"}
-        />
+        <div>
+          <LinkButton
+            text={"Animacoes"}
+            path={"/animacoes"}
+          />
+        </div>
       </s.Menu>
     </s.Container>
   )

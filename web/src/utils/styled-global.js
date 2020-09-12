@@ -9,7 +9,6 @@ export const GlobalStyled = createGlobalStyle`
   }
   body {
     font-family: Hammersmith One;
-    font-size: 28px;
   }
 `;
 

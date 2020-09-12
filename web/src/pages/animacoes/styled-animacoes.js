@@ -9,8 +9,12 @@ export const Container = styled.div`
 `;
 
 export const Box = styled(motion.div)`
-border-radius: 2px;
-    height: 100px;
-    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border-radius: 2px;
+    height: 70px;
+    width: 70px;
     background: ${Colors.verde};
 `;
