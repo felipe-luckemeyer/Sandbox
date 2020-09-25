@@ -13,11 +13,11 @@ const Lista = () => {
   }, [controls])
 
   return (
-    <ul>
+    <>
       <motion.li custom={0} animate={controls}>ahh</motion.li>
       <motion.li custom={1} animate={controls}>ahh</motion.li>
       <motion.li custom={2} animate={controls}>ahh</motion.li>
-    </ul>
+    </>
   )
 }
 

@@ -1,9 +1,9 @@
-import React from 'react'
-import { LinkButton, Lista } from "../../components";
+import React, { useState } from 'react'
+import { LinkButton } from "../../components";
 import * as s from "./styled-animacoes"
-// import { motion } from "framer-motion"
 
 const Animacoes = () => {
+  const [hovered, setHovered] = useState(false)
 
   return (
     <s.Container>
@@ -14,18 +14,35 @@ const Animacoes = () => {
 
       <s.Box
         whileTap={{ scale: 0.9, x: 200 }}
+        transition={{ ease: "easeOut" }}
       >
-        Tap
+        <label>
+          Tap
+
+        </label>
       </s.Box>
-      <s.Box
-        animate={{ rotate: 360 }}
-        transition={{ duration: 2 }}
+
+      <s.Box1
+        layout
+        hovered={hovered}
+        onHoverStart={() => setHovered(!hovered)}
+        onHoverEnd={() => setHovered(!hovered)}
       />
-      <s.Box
-        animate={{ x: 100 }}
-        transition={{ ease: "easeOut", duration: 2 }}
-      />
-      <Lista />
+
+      <div style={{ display: "flex" }}>
+        <s.Box2
+          whileHover={{ y: -20 }}
+        />
+        <s.Box2
+          whileHover={{ y: -20 }}
+        />
+        <s.Box2
+          whileHover={{ y: -20 }}
+        />
+        <s.Box2
+          whileHover={{ y: -20 }}
+        />
+      </div>
     </s.Container>
   )
 }
